@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "untitled_admin/version"
+# $:.push File.expand_path("../lib", __FILE__)
+# require "untitled_admin/version"
 
 Gem::Specification.new do |s|
   s.name        = "untitled_admin"
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "untitled_admin"
 
   s.files         = `git ls-files`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  # s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["vendor"]
 
   # specify any dependencies here; for example:
