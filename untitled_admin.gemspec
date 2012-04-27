@@ -4,7 +4,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "untitled_admin"
-  s.version     = UntitledAdmin::VERSION
+  s.version     = "0.0.1"
   s.authors     = ["Nick Giancola", "Jessica Lynn Suttles"]
   s.email       = ["nick@gophilosophie.com", "jessica@gophilosophie.com"]
   s.homepage    = "http://gophilosophie.com"
