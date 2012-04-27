@@ -1,0 +1,91 @@
+.button {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 6px 10px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+
+  text-decoration: none;
+
+  border: 1px solid #c0c0c0;
+  -webkit-border-radius: 4px;
+
+  background: #f6f8f9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+  background: linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+  &:focus {
+    outline: none;
+    border-color: #2798ce;
+  }
+
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// .button:hover {
+//   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+// }
+//
+// .button:active {
+//   -webkit-box-shadow: 0px -1px 3px rgba(0,0,0,0.15);
+// }
+
+
+.button.save {
+  background: rgb(82,177,82); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(82,177,82,1) 2%, rgba(0,138,0,1) 80%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(82,177,82,1)), color-stop(80%,rgba(0,138,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(82,177,82,1) 2%,rgba(0,138,0,1) 80%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(82,177,82,1) 2%,rgba(0,138,0,1) 80%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(82,177,82,1) 2%,rgba(0,138,0,1) 80%); /* IE10+ */
+  background: linear-gradient(top,  rgba(82,177,82,1) 2%,rgba(0,138,0,1) 80%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b152', endColorstr='#008a00',GradientType=0 ); /* IE6-9 */
+  border-color: #008a00;
+  color: #fff;
+}
+// In order for this :before to work, the style cannot
+// be applied on an input type element.
+.button.save:before {
+  content: "✓";
+  margin-right: 6px;
+  background-color: #fff;
+  color: #008a00;
+  -webkit-border-radius: 30px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+.button.add:before {
+  content: "+";
+  margin-right: 6px;
+  background-color: #333333;
+  color: #fff;
+  -webkit-border-radius: 30px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+}

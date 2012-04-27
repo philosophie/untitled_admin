@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  td, th {
+    padding: 6px 4px;
+  }
+
+  tbody {
+    tr:nth-child(even) td {
+      background-color: #f3f3f3;
+    }
+  }
+
+  td.actions {
+    text-align: right;
+  }
+}

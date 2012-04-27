@@ -1,0 +1,35 @@
+
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 10pt;
+  color: #333333;
+}
+
+#site_container {
+  width: 100%;
+}
+
+
+#content_container {
+  padding: 20px 40px;
+}
+
+
+h1 {
+
+}
+h2 {
+  margin: 30px 0 20px;
+  font-size: 1.7em;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+h3 {
+  margin: 20px 0 10px;
+  font-size: 1.2em;
+  &:first-child {
+    margin-top: 0;
+  }
+}

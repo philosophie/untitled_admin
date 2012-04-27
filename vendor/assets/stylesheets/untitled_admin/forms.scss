@@ -1,0 +1,440 @@
+form {
+
+  .note {
+    color: #969696;
+    font-size: .8em;
+    a {
+      color: inherit;
+    }
+  }
+
+  legend + p {
+    margin-bottom: 10px;
+  }
+
+  fieldset {
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .description {
+      margin-bottom: 20px;
+    }
+    
+    &.inline_fieldset {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+    }
+  }
+  legend {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  // nested fieldsets
+  fieldset fieldset {
+    margin: 20px 0 0;
+    margin-bottom: 0;
+    border: 0;
+    padding: 10px 0 0;
+    legend {
+      font-size: 1.2em;
+      background: #e6e6e6;
+      border-bottom: 1px solid #c0c0c0;
+      padding: 6px 10px;
+    }
+  }
+  fieldset legend + fieldset {
+    margin-top: 0;
+  }
+
+  // text fields inside tables
+  td input[type=text] {
+    width: 90%;
+  }
+
+
+  .gridded {
+    fieldset {
+      width: 300px;
+      margin: 0 0 20px;
+    }
+  }
+
+  // "Cards"
+  .cards_container {
+    display: inline;
+  }
+  fieldset.card {
+    width: auto;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    margin: 0 20px 20px 0;
+    padding: 15px;
+    border: 1px solid #c0c0c0;
+
+    label {
+      width: 54px;
+    }
+    input[type=text] {
+      width: 240px;
+    }
+
+    .address {
+      .line {
+        display: block;
+        margin-bottom: 6px;
+        width: 304px;
+      }
+      .city {
+        width: 114px;
+        margin-right: 6px;
+      }
+      .state {
+        width: 100px;
+        margin-right: 6px;
+      }
+      .zip {
+        width: 60px;
+      }
+    }
+
+    .add_another_card {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      width: 40px;
+      height: 40px;
+      background: transparent image-url('admin/icons/plus_big.png') no-repeat left top;
+      overflow: hidden;
+      text-align: left;
+      text-indent: -10000px;
+    }
+  }
+
+  ul {
+
+  }
+  li {
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // Full width input/textarea and label
+  // li.full {
+  //   label {
+  //     display: block;
+  //     width: auto;
+  //     margin-bottom: 4px;
+  //     text-align: left;
+  //   }
+  //   textarea, input[type=text], input[type=password], input[type=email] {
+  //     width: 97%;
+  //     max-width: 600px;
+  //   }
+  // }
+
+  label, input[type=text], input[type=password], textarea {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+  }
+
+  input[type=submit] {
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  // Base label
+  // Also used for standard one to the left of an input
+  label {
+    width: 130px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 6px;
+  }
+
+  // Custom text box style
+  input[type=text], input[type=password], input[type=email], textarea {
+    border: 1px solid #8f8f8f;
+    -webkit-border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25) inset;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+      border-color: #2798ce;
+    }
+    &:disabled {
+      background: #fafafa;
+      border-color: #b5b5b5;
+      box-shadow: 0px 1px 3px rgba(0,0,0,0.1) inset;
+    }
+  }
+
+  input[type=text], input[type=password], input[type=email], textarea {
+    width: 300px;
+    padding: 4px;
+    font-size: inherit;
+
+    &.tiny {
+      width: 80px;
+    }
+  }
+
+  textarea {
+    width: 600px;
+  }
+
+  select.chosen {
+    width: 300px;
+    &.wide {
+      width: 500px;
+    }
+  }
+
+  input[type=checkbox], input[type=radio] {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+  }
+
+  input[type=checkbox] + label, input[type=radio] + label {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: left;
+    width: auto;
+    margin-right: 8px;
+  }
+
+
+  // Text box with descriptor inside the box
+  // Default style: $ [ type here ]
+  .descriptive_input {
+    border: 1px solid #8f8f8f;
+    -webkit-border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25) inset;
+    background: #fff;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+
+    .descriptor, input {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      vertical-align: middle;
+    }
+
+    .descriptor {
+      color: #838383;
+      padding-left: 6px;
+    }
+
+    input + .descriptor {
+      padding-left: 0;
+      padding-right: 6px;
+    }
+
+    input, input:disabled {
+      background: none;
+      border: none;
+      box-shadow: none;
+      width: 70px;
+    }
+
+    &.focused {
+      border-color: #2798ce;
+    }
+    &.disabled {
+      border-color: #b5b5b5;
+      box-shadow: 0px 1px 3px rgba(0,0,0,0.1) inset;
+      background: #fafafa;
+      .descriptor, input {
+        color: #a5a6ab;
+      }
+    }
+  }
+
+  .descriptive_input + .descriptive_input, input + input {
+    margin-left: 8px;
+  }
+  input[type=hidden] + input {
+    margin-left: 0;
+  }
+
+  .descriptive_input.percent {
+    input {
+      width: 30px;
+    }
+  }
+  .descriptive_input.years {
+    input {
+      width: 30px;
+    }
+  }
+  //
+  // .descriptive_input.square_feet {
+  //   .descriptor {
+  //     padding-right: 4px;
+  //   }
+  // }
+
+
+
+  .add_another_row {
+    margin: 10px 0 0 4px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 20px;
+    height: 20px;
+    background: transparent image-url('admin/icons/plus_small.png') no-repeat left top;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -10000px;
+  }
+
+  .destroy {
+    color: #ed5133;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.4em;
+    &:hover {
+      color: #a03c29;
+    }
+  }
+  .rows_container .destroy {
+    margin-left: 6px;
+  }
+  .card .destroy {
+    float: right;
+    font-size: 1.8em;
+  }
+
+
+  //
+  // Checkbox with text inputs next to them
+  // for adding "Other" options to checkbox lists
+  //
+  .optional_add_other {
+    input[type=checkbox] + label {
+      width: 100px;
+    }
+    li {
+      padding: 5px 0;
+      margin: 0;
+    }
+    li:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+  }
+
+  //
+  // ERRORS
+  //
+
+  .field_with_errors {
+    display: inline;
+    label {
+      color: #ed5133;
+    }
+    input[type=text], input[type=password], textarea {
+      border-color: #ed5133;
+      &:focus {
+        border-color: #2798ce;
+      }
+    }
+  }
+
+  .errors_container {
+    h2 {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  }
+
+}
+
+
+.save_changes_prompt {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #444444;
+  text-align: right;
+  p {
+    color: #fff;
+    padding: 4px 40px;
+    input {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+.sidebar form {
+
+  ul {
+    margin-top: 10px;
+  }
+
+  label, input, textarea {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+  }
+
+  label {
+    line-height: 1;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  label + p {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+
+  input[type=checkbox] + label, input[type=radio] + label {
+    width: auto;
+    display: inline;
+    margin: 0 10px 0 4px;
+  }
+
+  input[type=text], textarea, select {
+    width: 200px;
+    font-size: inherit;
+  }
+
+  ul {
+    li {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+}

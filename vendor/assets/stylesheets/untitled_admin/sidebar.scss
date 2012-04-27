@@ -1,0 +1,26 @@
+.sidebar {
+
+  width: 229px;
+  padding: 10px;
+  border-right: 1px solid #c0c0c0;
+
+  float: left;
+
+  background: #f0f0f0;
+
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+
+  li {
+    margin-top: 6px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+}
+
+.sidebar + .content {
+  margin-left: 250px;
+  padding-left: 20px;
+}

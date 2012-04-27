@@ -1,0 +1,23 @@
+.flash, .errors_container {
+  -webkit-border-radius: 4px;
+  padding: 10px 10px 10px 50px;
+  margin-bottom: 20px;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+  font-weight: bold;
+  color: #fff;
+}
+
+.flash.success {
+  border: 1px solid #569f3f;
+  background: #72c258 image-url('admin/icons/flash/success.png') no-repeat 10px center;
+}
+
+.flash.error, .errors_container {
+  border: 1px solid #be2507;
+  background: #ed5133 image-url('admin/icons/flash/error.png') no-repeat 10px center;
+}
+
+.flash.notice {
+  border: 1px solid #e99e28;
+  background: #f8c240 image-url('admin/icons/flash/notice.png') no-repeat 10px center;
+}
