@@ -12,12 +12,12 @@
   background: #72c258 image-url('admin/icons/flash/success.png') no-repeat 10px center;
 }
 
-.flash.error, .errors_container {
+.flash.error, .errors_container, .alert_container {
   border: 1px solid #be2507;
   background: #ed5133 image-url('admin/icons/flash/error.png') no-repeat 10px center;
 }
 
-.flash.notice {
+.flash.notice, .notice_container {
   border: 1px solid #e99e28;
   background: #f8c240 image-url('admin/icons/flash/notice.png') no-repeat 10px center;
 }
