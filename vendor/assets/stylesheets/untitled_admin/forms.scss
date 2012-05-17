@@ -160,6 +160,19 @@ form {
     margin-right: 6px;
   }
 
+  // Label with a div to the right of it
+  // Often used for image fields with an image and an input
+  // to replace existing image
+  label + div {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    img + br + input {
+      margin-top: 6px;
+    }
+  }
+
   // Custom text box style
   input[type=text], input[type=password], input[type=email], textarea {
     border: 1px solid #8f8f8f;
