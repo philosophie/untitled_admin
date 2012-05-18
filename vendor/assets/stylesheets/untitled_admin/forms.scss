@@ -219,7 +219,9 @@ form {
     vertical-align: middle;
   }
 
-  input[type=checkbox] + label, input[type=radio] + label {
+  input[type=checkbox] + label,
+  input[type=radio] + label,
+  label.inline_with_toggle {
     display: inline-block;
     *display: inline;
     zoom: 1;
