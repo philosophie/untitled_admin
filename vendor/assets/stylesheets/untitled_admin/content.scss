@@ -2,6 +2,13 @@
 
 }
 
+.content article {
+  margin-top: 30px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 .pagination {
   margin-top: 20px;
   text-align: right;
