@@ -90,18 +90,15 @@
   line-height: 14px;
 }
 
-.button.delete:before {
-  content: "x";
-  margin-right: 6px;
-  background-color: #fff;
-  color: red;
-  -webkit-border-radius: 30px;
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  text-align: center;
-  font-size: 14px;
-  line-height: 14px;
+.button.delete {
+  background: rgb(82,177,82); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(177,82,82,1) 2%, rgba(138,0,0,1) 80%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(177,82,82,1)), color-stop(80%,rgba(138,0,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(177,82,82,1) 2%,rgba(138,0,0,1) 80%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(177,82,82,1) 2%,rgba(138,0,0,1) 80%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(177,82,82,1) 2%,rgba(138,0,0,1) 80%); /* IE10+ */
+  background: linear-gradient(top,  rgba(177,82,82,1) 2%,rgba(138,0,0,1) 80%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b15252', endColorstr='#8a0000',GradientType=0 ); /* IE6-9 */
+  border-color: #8a0000;
+  color: #fff;
 }
