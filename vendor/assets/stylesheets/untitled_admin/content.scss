@@ -13,11 +13,11 @@ article {
   margin-top: 20px;
   text-align: right;
   cursor: default;
-  li {
+  span {
     display: inline-block;
     *display: inline;
     zoom: 1;
-    a, span {
+    a {
       display: inline-block;
       *display: inline;
       zoom: 1;
@@ -30,10 +30,11 @@ article {
       cursor: pointer;
       background: #dadada;
     }
-    span {
+    &.current {
       color: #fff;
       background: #333333;
       font-weight: bold;
+      padding: 3px 6px 2px;
     }
   }
 }
