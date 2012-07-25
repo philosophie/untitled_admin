@@ -2,6 +2,12 @@
 
 }
 
+section.bordered {
+  border: 1px solid #c0c0c0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 article {
   margin-top: 30px;
   &:first-child {
